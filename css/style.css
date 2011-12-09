@@ -98,12 +98,15 @@ nav a{
 	color:white;
 	font-weight:bold;
 	text-decoration:none;
+	margin-bottom:10px;
+}
+
+nav a:hover, nav a:visited{
+	color:white;
 }
 
 nav a:hover{
-	color:white;
-	padding-bottom:22px;
-	border-bottom:3px solid white;
+	text-decoration:underline;
 }
 
 #main{
@@ -149,13 +152,23 @@ nav a:hover{
 
 	nav a{
 		display:inline-block;
-		width:33.3%; /* 100% / number of items */
-		padding:25px 0;
+		width:27%;
+		margin:0 1.7%;
+		padding:25px 2%;
+		margin-bottom:0;
+		
 		/* For IE 7 */
 		zoom: 1;
 		*display: inline;
 	}
+	
+	nav li:first-child a{
+		margin-left:0;
+	}
 
+	nav li:last-child a{
+		margin-right:0;
+	}
 }
 
 @media only screen and (min-width: 768px) {
