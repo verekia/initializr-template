@@ -79,26 +79,14 @@ td { vertical-align: top; }
 	background:#f16529;
 }
 
+#title{ color:white; }
 
-
-#title{
-	float:left;
-	color:white;
-}
-
-nav{
-	float:right;
-	width:38%; /* Golden ratio for 100% = 62% + 38% */
-}
-
-nav li{
-	display:inline;
+nav ul li{
 }
 
 nav a{
-	display:inline-block;
+	display:block;
 	background:#e44d26;
-	width:33.3%; /* 100% / number of items */
 	text-align:center;
 	padding:25px 0;
 	color:white;
@@ -116,15 +104,8 @@ nav a:hover{
 	padding:30px 0;
 }
 
-#main article{
-	float:left;
-	width:62%;
-}
-
 #main aside{
-	float:right;
-	width:38%;
-	background:#e44d26;
+	display:none;
 }
 
 
@@ -146,10 +127,45 @@ nav a:hover{
 
 @media only screen and (min-width: 480px) {
 
+	nav li{
+		display:inline;
+	}
+
+	nav a{
+		display:inline-block;
+		width:33.3%; /* 100% / number of items */
+		
+		/* For IE 7 */
+		zoom: 1;
+		*display: inline;
+	}
+	
+	#main article{
+		float:left;
+		width:62%;
+	}
+	
+	#main aside{
+		display:block;
+		float:right;
+		width:38%;
+		background:#e44d26;
+	}
 
 }
 
 @media only screen and (min-width: 768px) {
+	
+	#title{
+		float:left;
+	}
+
+	nav{
+		float:right;
+		width:38%; /* Golden ratio for 100% = 62% + 38% */
+	}
+	
+	
 
 }
 
