@@ -66,6 +66,10 @@ td { vertical-align: top; }
    Author: 
    ========================================================================== */
 
+body{
+	font:16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
 .wrapper{
 	width:90%;
 	margin:0 5%;
@@ -73,9 +77,11 @@ td { vertical-align: top; }
 
 #header-container{ border-bottom: 20px solid #e44d26; }
 #footer-container{ border-top:    20px solid #e44d26; }
+#main aside      { border-top:    20px solid #e44d26; }
 
 #header-container,
-#footer-container{
+#footer-container,
+#main aside{
 	background:#f16529;
 }
 
@@ -105,10 +111,14 @@ nav a:hover{
 }
 
 #main aside{
-	display:none;
+	color:white;
+	padding:0px 5% 10px;
 }
 
-
+#footer-container footer{
+	color:white;
+	padding:20px 0;
+}
 
 
 /* ==|== non-semantic helper classes ======================================== */
@@ -139,18 +149,6 @@ nav a:hover{
 		zoom: 1;
 		*display: inline;
 	}
-	
-	#main article{
-		float:left;
-		width:62%;
-	}
-	
-	#main aside{
-		display:block;
-		float:right;
-		width:38%;
-		background:#e44d26;
-	}
 
 }
 
@@ -165,7 +163,15 @@ nav a:hover{
 		width:38%; /* Golden ratio for 100% = 62% + 38% */
 	}
 	
+	#main article{
+		float:left;
+		width:57%;
+	}
 	
+	#main aside{
+		float:right;
+		width:28%;
+	}
 
 }
 
