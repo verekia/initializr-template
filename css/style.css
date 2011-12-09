@@ -168,6 +168,10 @@ nav a:hover{
 		width:57%;
 	}
 	
+	#main article h1{
+		font-size:2em;
+	}
+	
 	#main aside{
 		float:right;
 		width:28%;
