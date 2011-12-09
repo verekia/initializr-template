@@ -66,14 +66,14 @@ td { vertical-align: top; }
    Author: 
    ========================================================================== */
 
-body{
-	font:16px/26px Helvetica, Helvetica Neue, Arial;
-}
+body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 
 .wrapper{
 	width:90%;
 	margin:0 5%;
 }
+
+/* == Orange Theme == */
 
 #header-container{ border-bottom: 20px solid #e44d26; }
 #footer-container{ border-top:    20px solid #e44d26; }
@@ -87,18 +87,19 @@ body{
 
 #title{ color:white; }
 
-nav ul li{
-}
+/* == Menu (mobile) == */
 
 nav a{
 	display:block;
-	background:#e44d26;
-	text-align:center;
-	padding:15px 0;
-	color:white;
-	font-weight:bold;
-	text-decoration:none;
 	margin-bottom:10px;
+	padding:15px 0;
+
+	background:#e44d26;
+	color:white;
+
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
 }
 
 nav a:hover, nav a:visited{
@@ -108,6 +109,8 @@ nav a:hover, nav a:visited{
 nav a:hover{
 	text-decoration:underline;
 }
+
+/* == Main (mobile) == */
 
 #main{
 	padding:30px 0;
@@ -122,12 +125,16 @@ nav a:hover{
 	padding:0px 5% 10px;
 }
 
-
+/* == Footer == */
 
 #footer-container footer{
 	color:white;
 	padding:20px 0;
 }
+
+/* == IE Fixes == */
+
+.ie7 #title{ padding-top:20px; }
 
 
 /* ==|== non-semantic helper classes ======================================== */
@@ -146,6 +153,8 @@ nav a:hover{
 
 @media only screen and (min-width: 480px) {
 
+	/* == Menu (intermediate) == */
+	
 	nav a{
 		float:left;
 		width:27%;
@@ -154,20 +163,22 @@ nav a:hover{
 		margin-bottom:0;
 	}
 	
-	.oldie nav a{
-		margin:0 1.3%;		
-	}
+	nav li:first-child a{ margin-left:0;  }
+	nav li:last-child  a{ margin-right:0; }
 	
-	nav li:first-child a{
-		margin-left:0;
-	}
-
-	nav li:last-child a{
-		margin-right:0;
+	/* == IE Fixes == */
+	
+	nav ul li{
+		display:inline;
+	}	
+	.oldie nav a{
+		margin:0 0.7%;		
 	}
 }
 
 @media only screen and (min-width: 768px) {
+
+	/* == Menu (wide) == */
 	
 	#title{
 		float:left;
@@ -175,9 +186,11 @@ nav a:hover{
 
 	nav{
 		float:right;
-		width:38%; /* Golden ratio for 100% = 62% + 38% */
+		width:38%;
 	}
-	
+
+	/* == Main (wide) == */
+
 	#main article{
 		float:left;
 		width:57%;
