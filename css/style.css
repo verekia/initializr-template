@@ -146,20 +146,16 @@ nav a:hover{
 
 @media only screen and (min-width: 480px) {
 
-	nav li{
-		display:inline;
-	}
-
 	nav a{
-		display:inline-block;
+		float:left;
 		width:27%;
 		margin:0 1.7%;
 		padding:25px 2%;
 		margin-bottom:0;
-		
-		/* For IE 7 */
-		zoom: 1;
-		*display: inline;
+	}
+	
+	.oldie nav a{
+		margin:0 1.3%;		
 	}
 	
 	nav li:first-child a{
