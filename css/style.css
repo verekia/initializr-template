@@ -79,20 +79,20 @@ body{ font:16px/24px Helvetica, Helvetica Neue, Arial, sans-serif; }
     ALL: Orange Theme
    =================== */
 
-#header-container{ border-bottom: 20px solid #e44d26; }
-#footer-container{ border-top:    20px solid #e44d26; }
-#main aside      { border-top:    20px solid #e44d26; }
+#header-container{ border-bottom: 20px solid #232c36; }
+#footer-container{ border-top:    20px solid #232c36; }
+#main aside      { border-top:    20px solid #232c36; }
 
 #header-container,
 #footer-container,
 #main aside{
-	background:#f16529;
+	background:#435468;
 }
 
 #title{ color:white; }
 
-::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
-::selection      { background: #f16529; color: #fff; text-shadow: none; }
+::-moz-selection { background: #435468; color: #fff; text-shadow: none; }
+::selection      { background: #435468; color: #fff; text-shadow: none; }
 
 /* ==============
     MOBILE: Menu
@@ -103,7 +103,7 @@ nav a{
 	margin-bottom:10px;
 	padding:15px 0;
 
-	background:#e44d26;
+	background:#232c36;
 	color:white;
 
 	text-align:center;
@@ -117,6 +117,7 @@ nav a:hover, nav a:visited{
 
 nav a:hover{
 	text-decoration:underline;
+	background:#456488;
 }
 
 /* ==============
